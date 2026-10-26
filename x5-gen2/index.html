@@ -1,0 +1,453 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunseeker X5 Gen2 | Interactive Premium A+ Preview</title>
+<meta name="description" content="Interactive Amazon Premium A+ layout preview for Sunseeker X5 Gen2 using supplied selling-point imagery.">
+<style>
+:root{--accent:#f35b21;--ink:#1d282b;--text:#4d5c5e;--soft:#f3f6f6;--line:#e1e7e6}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:94px}
+body{margin:0;background:#ebeeee;color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif}
+button,a{font:inherit}button{cursor:pointer}a{color:inherit}
+.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.965);border-bottom:1px solid #d8dfdf;box-shadow:0 4px 14px #13231b10}
+.top-inner{max-width:1464px;margin:auto;height:77px;display:flex;align-items:center;gap:32px;padding:0 42px}
+.logo{font-size:24px;font-weight:900;font-style:italic;letter-spacing:-.045em;color:var(--accent);white-space:nowrap}
+.logo-sub{font-size:11px;color:#677176;letter-spacing:.14em;font-weight:750;margin-top:3px}
+.tabs{display:flex;align-items:center;overflow-x:auto;flex:1;height:100%;gap:4px;scrollbar-width:none}
+.tabs::-webkit-scrollbar,.slide-menu::-webkit-scrollbar{display:none}
+.top-tab{height:100%;display:flex;align-items:center;justify-content:center;padding:0 14px;border-bottom:3px solid transparent;white-space:nowrap;text-decoration:none;font-size:13px;font-weight:700;color:#59676a}
+.top-tab:hover,.top-tab.active{color:var(--accent);border-bottom-color:var(--accent);background:#fff6f0}
+.content{max-width:1464px;margin:0 auto;background:white;box-shadow:0 0 34px #344b4c1a}
+.hero{position:relative;height:700px;overflow:hidden;background:#274e36}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 53%}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,25,20,.94),rgba(11,25,20,.72) 35%,rgba(11,25,20,.06) 75%)}
+.hero-copy{position:absolute;top:50%;transform:translateY(-50%);left:7%;max-width:690px;color:white;padding-right:8%}
+.hero-label{letter-spacing:.24em;font-size:14px;color:#f9b389;font-weight:900;margin-bottom:22px}
+.hero h1{font-size:clamp(47px,5.4vw,82px);letter-spacing:-.055em;line-height:1.02;margin:0 0 20px;font-weight:900}
+.hero h1 em{font-style:normal;color:#ff8853}
+.hero-copy p{font-size:clamp(20px,2vw,29px);line-height:1.34;max-width:600px;margin:0 0 28px}
+.pills{display:flex;gap:10px;flex-wrap:wrap}.pills span{border:1px solid #ffffff75;background:#172f2787;border-radius:25px;font-weight:750;font-size:13px;padding:11px 17px}
+.hero-bottom{position:absolute;bottom:32px;left:7%;color:#fff9;font-size:12px;letter-spacing:.16em}
+.module{padding:62px 56px 67px;border-bottom:14px solid #eef2f1;scroll-margin-top:78px}
+.module-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:26px}
+.module-num{display:block;color:var(--accent);font-size:13px;font-weight:900;letter-spacing:.15em;margin-bottom:11px}
+.module h2{font-size:clamp(33px,3.4vw,51px);letter-spacing:-.047em;line-height:1.1;margin:0 0 10px}
+.module-head p{font-size:17px;color:#6c7879;line-height:1.45;margin:0}
+.slide-counter{color:#a2adae;font-size:20px;font-weight:700;white-space:nowrap;margin-bottom:8px}.slide-counter b{color:var(--accent);font-size:27px}
+.slide-menu{display:flex;gap:6px;overflow:auto;scrollbar-width:none;padding-bottom:12px;margin-bottom:9px}
+.slide-tab{background:#f6f8f7;border:1px solid #e5ebea;border-radius:100px;color:#697575;padding:11px 18px;white-space:nowrap;font-size:13px;font-weight:750;transition:.2s}
+.slide-tab.current,.slide-tab:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.stage{position:relative;box-shadow:0 14px 32px #273e3e12;border:1px solid #e3eae8;border-radius:9px;overflow:hidden}
+.slides{position:relative;min-height:560px}
+.slide{display:none;align-items:stretch;min-height:560px;animation:fadeup .25s ease-out}
+.slide.active{display:flex}
+@keyframes fadeup{from{opacity:.55;transform:translateY(8px)}to{opacity:1;transform:none}}
+.visual-media,.visual-copy{flex:1 1 50%;width:50%;min-width:0}
+.visual-media{background:#f0f4f1;display:flex;align-items:center;justify-content:center;padding:10px}
+.visual-media img{display:block;width:100%;height:540px;object-fit:contain;border-radius:3px}
+.visual-copy{padding:65px 75px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.feature-kicker{font-size:15px;letter-spacing:.08em;font-weight:900;color:var(--accent);text-transform:uppercase;padding-left:15px;border-left:4px solid var(--accent);margin-bottom:25px}
+.visual-copy h3{font-size:clamp(31px,3.1vw,47px);letter-spacing:-.05em;line-height:1.14;margin:0 0 22px}
+.visual-copy p{font-size:clamp(18px,1.75vw,26px);color:#5a6867;line-height:1.55;margin:0}
+.feature-rule{margin-top:41px;width:65px;height:5px;background:var(--accent);border-radius:4px}
+.slide.flip{flex-direction:row-reverse}.slide.flip .visual-copy{background:#fbfcfb}
+.arrow{width:48px;height:62px;display:grid;place-items:center;position:absolute;top:50%;transform:translateY(-50%);z-index:4;border:1px solid #d7dfde;border-radius:8px;background:#fffffff2;color:#172e2d;font-size:26px;box-shadow:0 4px 14px #0002}
+.arrow:hover{background:var(--accent);border-color:var(--accent);color:#fff}.arrow.prev{left:10px}.arrow.next{right:10px}
+.slide-footer{display:flex;align-items:center;justify-content:center;gap:28px;padding-top:19px;position:relative;min-height:45px}
+.pager{display:flex;justify-content:center;gap:10px}.pager-dot{border:0;width:10px;height:10px;border-radius:100%;background:#d4dad9;padding:0}.pager-dot.current{background:var(--accent);width:34px;border-radius:20px}
+.swipe-label{position:absolute;right:3px;color:#899696;font-size:10px;font-weight:750;letter-spacing:.1em}
+.compare-wrap{padding:10px 0 25px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:840px}thead th{background:#f0f4f2;padding:24px 14px;font-size:21px}
+thead th:nth-child(2){background:var(--accent);color:white}
+tbody th,tbody td{border-bottom:1px solid #e4eae8;padding:16px;text-align:center;font-size:16px}
+tbody th{text-align:left;width:29%;font-weight:750;color:#475656;background:#f8faf9}
+tbody td:nth-child(2){background:#fff6f0;font-weight:800}
+.model-tag{font-size:11px;display:block;margin-top:10px;opacity:.75;font-weight:500}
+.foot{padding:33px 55px 45px;background:#1e3834;color:#e9f1ed;display:flex;justify-content:space-between;gap:22px;font-size:13px;line-height:1.55}
+.foot p{margin:0;max-width:850px}.foot b{color:#ffac82}
+@media(max-width:1050px){.top-inner{padding:0 22px;gap:15px}.logo{font-size:19px}.module{padding:47px 28px 42px}.slides,.slide{min-height:450px}.visual-media img{height:430px}.visual-copy{padding:35px 50px}.swipe-label{display:none}}
+@media(max-width:730px){html{scroll-padding-top:74px}.top-inner{height:68px;padding:0 10px;gap:10px}.logo{font-size:16px}.logo-sub{font-size:8px}.top-tab{font-size:12px;padding:0 11px}.hero{height:580px}.hero-img{object-position:63%}.hero-shade{background:linear-gradient(90deg,#12251fda,#12251f70 70%,#12251f3b)}.hero-copy{left:6%;max-width:92%;padding-right:0}.hero h1{font-size:53px}.hero-copy p{font-size:21px}.pills span{font-size:11px;padding:9px 12px}.module{padding:36px 15px 42px;scroll-margin-top:67px}.module h2{font-size:31px}.module-head{align-items:center}.module-head p{font-size:14px}.slide-counter{font-size:16px}.slide-counter b{font-size:20px}.slide-menu{margin-bottom:5px}.slide-tab{font-size:12px;padding:9px 13px}.slides,.slide{min-height:unset}.slide.active{display:flex;flex-direction:column!important}.visual-media,.visual-copy{width:100%}.visual-media{height:290px;padding:8px}.visual-media img{height:274px}.visual-copy{min-height:230px;padding:22px 32px 37px}.feature-kicker{font-size:12px;margin-bottom:14px}.visual-copy h3{font-size:29px;margin-bottom:11px}.visual-copy p{font-size:17px}.feature-rule{margin-top:24px}.arrow{height:45px;width:36px;font-size:19px;top:150px}.arrow.prev{left:5px}.arrow.next{right:5px}.foot{padding:25px 22px;display:block}.foot p{margin-bottom:12px}}
+@media(prefers-reduced-motion:reduce){*,html{animation:none!important;scroll-behavior:auto!important}}
+</style></head>
+<body>
+<header class="top"><div class="top-inner"><div><div class="logo">SUNSEEKER</div><div class="logo-sub">X5 GEN2 · PREMIUM A+</div></div><nav class="tabs" aria-label="A+ module navigation"><a href="#hero" class="top-tab" data-section="hero">Overview</a><a href="#navigation" class="top-tab" data-section="navigation">Navigation &amp; Vision</a><a href="#cutting" class="top-tab" data-section="cutting">Cutting Efficiency</a><a href="#terrain" class="top-tab" data-section="terrain">Tough Terrain</a><a href="#app" class="top-tab" data-section="app">App Control</a><a href="#trust" class="top-tab" data-section="trust">Sunseeker Support</a><a href="#comparison" class="top-tab" data-section="comparison">Comparison</a></nav></div></header>
+<main class="content">
+<section id="hero" class="hero">
+<img class="hero-img" src="" data-asset-file="assets/img00.txt" alt="Sunseeker X5 Gen2 robotic mower climbing a lawn slope, from supplied brief">
+<div class="hero-shade"></div>
+<div class="hero-copy"><div class="hero-label">ALL-TERRAIN CONQUER · ATC</div><h1>Sunseeker<br><em>X5 Gen2</em></h1><p>AWD Terrain Confidence<br>Made for Slopes and Turf</p>
+<div class="pills"><span>0.5 Acre</span><span>AWD + Front Suspension</span><span>60% / 30° Slope</span><span>RTK + VSLAM 2.0</span></div></div>
+<div class="hero-bottom">VIDEO COVER POSITION · IMAGE PREVIEW</div>
+</section>
+
+    <section class="module" id="navigation" data-carousel="navigation">
+      <div class="module-head">
+        <div><span class="module-num">MODULE 02</span><h2>Navigation &amp; Vision</h2><p>Built for Complex 0.5-Acre Yards</p></div>
+        <span class="slide-counter"><b class="idx">01</b> / 05</span>
+      </div>
+      <div class="slide-menu" aria-label="Selling point navigation"><button type="button" class="slide-tab current" data-slide-tab="0" title="Perceive Navigation" aria-label="View Perceive Navigation" aria-pressed="true">Perceive Navigation</button><button type="button" class="slide-tab" data-slide-tab="1" title="Smart Path Planning" aria-label="View Smart Path Planning" aria-pressed="false">Smart Path Planning</button><button type="button" class="slide-tab" data-slide-tab="2" title="Never Lost Anywhere" aria-label="View Never Lost Anywhere" aria-pressed="false">Never Lost Anywhere</button><button type="button" class="slide-tab" data-slide-tab="3" title="Obstacle Density" aria-label="View Obstacle Density" aria-pressed="false">Obstacle Density</button><button type="button" class="slide-tab" data-slide-tab="4" title="Day &amp; Night Operation" aria-label="View Day &amp; Night Operation" aria-pressed="false">Day &amp; Night Operation</button></div>
+      <div class="stage">
+        <button type="button" class="arrow prev" data-prev aria-label="Previous selling point">&#10094;</button>
+        <div class="slides">
+        <article class="slide active" data-slide="0" role="group" aria-roledescription="slide"
+            aria-label="1 of 5: Perceive Navigation" aria-hidden="false">
+          <div class="visual-media"><img src="" data-asset-file="assets/img01.txt" alt="Perceive Navigation — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Perceive Navigation</div>
+            <h3>See &amp; Navigate Precisely</h3>
+            <p>Binocular cameras and iToF support precise day-and-night awareness alongside RTK + VSLAM 2.0.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="1" role="group" aria-roledescription="slide"
+            aria-label="2 of 5: Smart Path Planning" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img02.txt" alt="Smart Path Planning — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Smart Path Planning</div>
+            <h3>Plan Smarter Paths</h3>
+            <p>Intelligent planning helps organize mowing routes for more consistent lawn coverage.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="2" role="group" aria-roledescription="slide"
+            aria-label="3 of 5: Never Lost Anywhere" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img03.txt" alt="Never Lost Anywhere — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Never Lost Anywhere</div>
+            <h3>Stay on Course</h3>
+            <p>Visual perception supports navigation near trees, garden edges and shaded areas.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="3" role="group" aria-roledescription="slide"
+            aria-label="4 of 5: Obstacle Density" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img04.txt" alt="Obstacle Density — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Obstacle Density</div>
+            <h3>Avoid with Confidence</h3>
+            <p>Vision AI 2.0 and bumper detection help the mower recognize and avoid obstacles.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="4" role="group" aria-roledescription="slide"
+            aria-label="5 of 5: Day &amp; Night Operation" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img05.txt" alt="Day &amp; Night Operation — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Day &amp; Night Operation</div>
+            <h3>Vision Beyond Daylight</h3>
+            <p>Binocular cameras and iToF provide day-and-night visual perception.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article></div>
+        <button type="button" class="arrow next" data-next aria-label="Next selling point">&#10095;</button>
+      </div>
+      <div class="slide-footer"><div class="pager"><button type="button" data-dot="0" class="pager-dot current" aria-label="Go to slide 1" aria-current="true"></button><button type="button" data-dot="1" class="pager-dot" aria-label="Go to slide 2" aria-current="false"></button><button type="button" data-dot="2" class="pager-dot" aria-label="Go to slide 3" aria-current="false"></button><button type="button" data-dot="3" class="pager-dot" aria-label="Go to slide 4" aria-current="false"></button><button type="button" data-dot="4" class="pager-dot" aria-label="Go to slide 5" aria-current="false"></button></div><div class="swipe-label">← SWIPE / CLICK TO EXPLORE →</div></div>
+    </section>
+    <section class="module" id="cutting" data-carousel="cutting">
+      <div class="module-head">
+        <div><span class="module-num">MODULE 03</span><h2>Cutting Efficiency</h2><p>Consistent Cuts, Less Effort</p></div>
+        <span class="slide-counter"><b class="idx">01</b> / 05</span>
+      </div>
+      <div class="slide-menu" aria-label="Selling point navigation"><button type="button" class="slide-tab current" data-slide-tab="0" title="Max Efficiency" aria-label="View Max Efficiency" aria-pressed="true">Max Efficiency</button><button type="button" class="slide-tab" data-slide-tab="1" title="3 Cutting Modes" aria-label="View 3 Cutting Modes" aria-pressed="false">3 Cutting Modes</button><button type="button" class="slide-tab" data-slide-tab="2" title="Height Adjustment" aria-label="View Height Adjustment" aria-pressed="false">Height Adjustment</button><button type="button" class="slide-tab" data-slide-tab="3" title="Smart Processing" aria-label="View Smart Processing" aria-pressed="false">Smart Processing</button><button type="button" class="slide-tab" data-slide-tab="4" title="Floating Cut" aria-label="View Floating Cut" aria-pressed="false">Floating Cut</button></div>
+      <div class="stage">
+        <button type="button" class="arrow prev" data-prev aria-label="Previous selling point">&#10094;</button>
+        <div class="slides">
+        <article class="slide active" data-slide="0" role="group" aria-roledescription="slide"
+            aria-label="1 of 5: Max Efficiency" aria-hidden="false">
+          <div class="visual-media"><img src="" data-asset-file="assets/img06.txt" alt="Max Efficiency — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Max Efficiency</div>
+            <h3>8.7-in, 6-Blade Disc</h3>
+            <p>An 8.7-inch cutting width and six blades deliver efficient coverage with each pass.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="1" role="group" aria-roledescription="slide"
+            aria-label="2 of 5: 3 Cutting Modes" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img07.txt" alt="3 Cutting Modes — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">3 Cutting Modes</div>
+            <h3>Choose How You Cut</h3>
+            <p>Edge following, spot mowing and ride-on boundary cutting adapt to different areas.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="2" role="group" aria-roledescription="slide"
+            aria-label="3 of 5: Height Adjustment" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img08.txt" alt="Height Adjustment — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Height Adjustment</div>
+            <h3>Set the Right Height</h3>
+            <p>Manual 1.6–3.2-inch height adjustment lets you adapt the cut to your lawn.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="3" role="group" aria-roledescription="slide"
+            aria-label="4 of 5: Smart Processing" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img09.txt" alt="Smart Processing — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Smart Processing</div>
+            <h3>Intelligent Mowing</h3>
+            <p>Smart planning and Vision AI 2.0 support coordinated mowing and obstacle response.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="4" role="group" aria-roledescription="slide"
+            aria-label="5 of 5: Floating Cut" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img10.txt" alt="Floating Cut — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Floating Cut</div>
+            <h3>Follow Lawn Contours</h3>
+            <p>The floating cutting disc helps maintain a consistent cut over uneven turf.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article></div>
+        <button type="button" class="arrow next" data-next aria-label="Next selling point">&#10095;</button>
+      </div>
+      <div class="slide-footer"><div class="pager"><button type="button" data-dot="0" class="pager-dot current" aria-label="Go to slide 1" aria-current="true"></button><button type="button" data-dot="1" class="pager-dot" aria-label="Go to slide 2" aria-current="false"></button><button type="button" data-dot="2" class="pager-dot" aria-label="Go to slide 3" aria-current="false"></button><button type="button" data-dot="3" class="pager-dot" aria-label="Go to slide 4" aria-current="false"></button><button type="button" data-dot="4" class="pager-dot" aria-label="Go to slide 5" aria-current="false"></button></div><div class="swipe-label">← SWIPE / CLICK TO EXPLORE →</div></div>
+    </section>
+    <section class="module" id="terrain" data-carousel="terrain">
+      <div class="module-head">
+        <div><span class="module-num">MODULE 04</span><h2>All-Terrain Confidence</h2><p>Large Lawn. Tough Terrain. Made Simple.</p></div>
+        <span class="slide-counter"><b class="idx">01</b> / 05</span>
+      </div>
+      <div class="slide-menu" aria-label="Selling point navigation"><button type="button" class="slide-tab current" data-slide-tab="0" title="All-Terrain Wheels" aria-label="View All-Terrain Wheels" aria-pressed="true">All-Terrain Wheels</button><button type="button" class="slide-tab" data-slide-tab="1" title="Turf Protection" aria-label="View Turf Protection" aria-pressed="false">Turf Protection</button><button type="button" class="slide-tab" data-slide-tab="2" title="Hill-Hold System" aria-label="View Hill-Hold System" aria-pressed="false">Hill-Hold System</button><button type="button" class="slide-tab" data-slide-tab="3" title="Auto Mapping" aria-label="View Auto Mapping" aria-pressed="false">Auto Mapping</button><button type="button" class="slide-tab" data-slide-tab="4" title="Narrow Paths" aria-label="View Narrow Paths" aria-pressed="false">Narrow Paths</button></div>
+      <div class="stage">
+        <button type="button" class="arrow prev" data-prev aria-label="Previous selling point">&#10094;</button>
+        <div class="slides">
+        <article class="slide active" data-slide="0" role="group" aria-roledescription="slide"
+            aria-label="1 of 5: All-Terrain Wheels" aria-hidden="false">
+          <div class="visual-media"><img src="" data-asset-file="assets/img00.txt" alt="All-Terrain Wheels — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">All-Terrain Wheels</div>
+            <h3>Grip Every Slope</h3>
+            <p>AWD and front wheel suspension help X5 Gen2 handle uneven ground and slopes up to 60%.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="1" role="group" aria-roledescription="slide"
+            aria-label="2 of 5: Turf Protection" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img11.txt" alt="Turf Protection — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Turf Protection</div>
+            <h3>Turn with More Care</h3>
+            <p>Rear-wheel steering supports precise turns while helping reduce lawn scuffing.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="2" role="group" aria-roledescription="slide"
+            aria-label="3 of 5: Hill-Hold System" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img00.txt" alt="Hill-Hold System — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Hill-Hold System</div>
+            <h3>Stay Stable on Slopes</h3>
+            <p>Designed for controlled mowing on inclines and along sloped lawn sections.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="3" role="group" aria-roledescription="slide"
+            aria-label="4 of 5: Auto Mapping" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img12.txt" alt="Auto Mapping — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Auto Mapping</div>
+            <h3>Map Your Lawn Faster</h3>
+            <p>Auto mapping helps create mowing boundaries and simplify initial setup.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="4" role="group" aria-roledescription="slide"
+            aria-label="5 of 5: Narrow Paths" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img13.txt" alt="Narrow Paths — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Narrow Paths</div>
+            <h3>Handle Tight Passages</h3>
+            <p>Navigate pathways and side yards with thoughtful route planning.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article></div>
+        <button type="button" class="arrow next" data-next aria-label="Next selling point">&#10095;</button>
+      </div>
+      <div class="slide-footer"><div class="pager"><button type="button" data-dot="0" class="pager-dot current" aria-label="Go to slide 1" aria-current="true"></button><button type="button" data-dot="1" class="pager-dot" aria-label="Go to slide 2" aria-current="false"></button><button type="button" data-dot="2" class="pager-dot" aria-label="Go to slide 3" aria-current="false"></button><button type="button" data-dot="3" class="pager-dot" aria-label="Go to slide 4" aria-current="false"></button><button type="button" data-dot="4" class="pager-dot" aria-label="Go to slide 5" aria-current="false"></button></div><div class="swipe-label">← SWIPE / CLICK TO EXPLORE →</div></div>
+    </section>
+    <section class="module" id="app" data-carousel="app">
+      <div class="module-head">
+        <div><span class="module-num">MODULE 05</span><h2>Multi-Zone App Control</h2><p>Every Area, One Simple App</p></div>
+        <span class="slide-counter"><b class="idx">01</b> / 06</span>
+      </div>
+      <div class="slide-menu" aria-label="Selling point navigation"><button type="button" class="slide-tab current" data-slide-tab="0" title="Zones &amp; Schedules" aria-label="View Zones &amp; Schedules" aria-pressed="true">Zones &amp; Schedules</button><button type="button" class="slide-tab" data-slide-tab="1" title="Route Options" aria-label="View Route Options" aria-pressed="false">Route Options</button><button type="button" class="slide-tab" data-slide-tab="2" title="Effortless Lawn" aria-label="View Effortless Lawn" aria-pressed="false">Effortless Lawn</button><button type="button" class="slide-tab" data-slide-tab="3" title="Lawn Patterns" aria-label="View Lawn Patterns" aria-pressed="false">Lawn Patterns</button><button type="button" class="slide-tab" data-slide-tab="4" title="Smart LCD Screen" aria-label="View Smart LCD Screen" aria-pressed="false">Smart LCD Screen</button><button type="button" class="slide-tab" data-slide-tab="5" title="Cost Comparison" aria-label="View Cost Comparison" aria-pressed="false">Cost Comparison</button></div>
+      <div class="stage">
+        <button type="button" class="arrow prev" data-prev aria-label="Previous selling point">&#10094;</button>
+        <div class="slides">
+        <article class="slide active" data-slide="0" role="group" aria-roledescription="slide"
+            aria-label="1 of 6: Zones &amp; Schedules" aria-hidden="false">
+          <div class="visual-media"><img src="" data-asset-file="assets/img14.txt" alt="Zones &amp; Schedules — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Zones &amp; Schedules</div>
+            <h3>Plan Every Zone</h3>
+            <p>Manage multiple mowing areas and set schedules for each zone from the app.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="1" role="group" aria-roledescription="slide"
+            aria-label="2 of 6: Route Options" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img15.txt" alt="Route Options — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Route Options</div>
+            <h3>Customize Your Route</h3>
+            <p>Configure virtual boundaries and zone routes to fit your yard layout.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="2" role="group" aria-roledescription="slide"
+            aria-label="3 of 6: Effortless Lawn" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img16.txt" alt="Effortless Lawn — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Effortless Lawn</div>
+            <h3>Let Sensors Help</h3>
+            <p>Rain sensing and automatic recharging reduce day-to-day intervention.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="3" role="group" aria-roledescription="slide"
+            aria-label="4 of 6: Lawn Patterns" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img17.txt" alt="Lawn Patterns — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Lawn Patterns</div>
+            <h3>Create Lawn Patterns</h3>
+            <p>Use mowing patterns and customized cutting angles to personalize your lawn finish.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="4" role="group" aria-roledescription="slide"
+            aria-label="5 of 6: Smart LCD Screen" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img18.txt" alt="Smart LCD Screen — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Smart LCD Screen</div>
+            <h3>See Status Clearly</h3>
+            <p>The built-in LCD displays essential status information on the mower.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="5" role="group" aria-roledescription="slide"
+            aria-label="6 of 6: Cost Comparison" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img19.txt" alt="Cost Comparison — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Cost Comparison</div>
+            <h3>Reclaim Your Weekends</h3>
+            <p>Automated mowing reduces the time you spend pushing a traditional mower.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article></div>
+        <button type="button" class="arrow next" data-next aria-label="Next selling point">&#10095;</button>
+      </div>
+      <div class="slide-footer"><div class="pager"><button type="button" data-dot="0" class="pager-dot current" aria-label="Go to slide 1" aria-current="true"></button><button type="button" data-dot="1" class="pager-dot" aria-label="Go to slide 2" aria-current="false"></button><button type="button" data-dot="2" class="pager-dot" aria-label="Go to slide 3" aria-current="false"></button><button type="button" data-dot="3" class="pager-dot" aria-label="Go to slide 4" aria-current="false"></button><button type="button" data-dot="4" class="pager-dot" aria-label="Go to slide 5" aria-current="false"></button><button type="button" data-dot="5" class="pager-dot" aria-label="Go to slide 6" aria-current="false"></button></div><div class="swipe-label">← SWIPE / CLICK TO EXPLORE →</div></div>
+    </section>
+    <section class="module" id="trust" data-carousel="trust">
+      <div class="module-head">
+        <div><span class="module-num">MODULE 06</span><h2>Built by Sunseeker</h2><p>Designed Around Everyday Ownership</p></div>
+        <span class="slide-counter"><b class="idx">01</b> / 05</span>
+      </div>
+      <div class="slide-menu" aria-label="Selling point navigation"><button type="button" class="slide-tab current" data-slide-tab="0" title="Quiet Operation" aria-label="View Quiet Operation" aria-pressed="true">Quiet Operation</button><button type="button" class="slide-tab" data-slide-tab="1" title="User Friendly" aria-label="View User Friendly" aria-pressed="false">User Friendly</button><button type="button" class="slide-tab" data-slide-tab="2" title="Industry Honors" aria-label="View Industry Honors" aria-pressed="false">Industry Honors</button><button type="button" class="slide-tab" data-slide-tab="3" title="What&#x27;s in the Box" aria-label="View What&#x27;s in the Box" aria-pressed="false">What&#x27;s in the Box</button><button type="button" class="slide-tab" data-slide-tab="4" title="Sunseeker Support" aria-label="View Sunseeker Support" aria-pressed="false">Sunseeker Support</button></div>
+      <div class="stage">
+        <button type="button" class="arrow prev" data-prev aria-label="Previous selling point">&#10094;</button>
+        <div class="slides">
+        <article class="slide active" data-slide="0" role="group" aria-roledescription="slide"
+            aria-label="1 of 5: Quiet Operation" aria-hidden="false">
+          <div class="visual-media"><img src="" data-asset-file="assets/img20.txt" alt="Quiet Operation — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Quiet Operation</div>
+            <h3>Make More of Quiet Time</h3>
+            <p>A 60 dB(A) noise rating helps X5 Gen2 fit into everyday yard routines.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="1" role="group" aria-roledescription="slide"
+            aria-label="2 of 5: User Friendly" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img16.txt" alt="User Friendly — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">User Friendly</div>
+            <h3>Built for Daily Use</h3>
+            <p>IPX5 protection, FOTA updates and smart-home support make ongoing use simpler.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="2" role="group" aria-roledescription="slide"
+            aria-label="3 of 5: Industry Honors" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img20.txt" alt="Industry Honors — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Industry Honors</div>
+            <h3>Innovation Worth Noting</h3>
+            <p>Use approved Sunseeker awards and product-specific recognition once verified.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide flip" data-slide="3" role="group" aria-roledescription="slide"
+            aria-label="4 of 5: What&#x27;s in the Box" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img21.txt" alt="What&#x27;s in the Box — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">What&#x27;s in the Box</div>
+            <h3>Everything Laid Out</h3>
+            <p>Mower, charging station, antenna, chargers, spare blades and installation hardware.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article>
+        <article class="slide" data-slide="4" role="group" aria-roledescription="slide"
+            aria-label="5 of 5: Sunseeker Support" aria-hidden="true">
+          <div class="visual-media"><img src="" data-asset-file="assets/img22.txt" alt="Sunseeker Support — original picture from supplied design brief"></div>
+          <div class="visual-copy">
+            <div class="feature-kicker">Sunseeker Support</div>
+            <h3>Support When Needed</h3>
+            <p>Access installation guidance, user resources and customer support after purchase.</p>
+            <div class="feature-rule"></div>
+          </div>
+        </article></div>
+        <button type="button" class="arrow next" data-next aria-label="Next selling point">&#10095;</button>
+      </div>
+      <div class="slide-footer"><div class="pager"><button type="button" data-dot="0" class="pager-dot current" aria-label="Go to slide 1" aria-current="true"></button><button type="button" data-dot="1" class="pager-dot" aria-label="Go to slide 2" aria-current="false"></button><button type="button" data-dot="2" class="pager-dot" aria-label="Go to slide 3" aria-current="false"></button><button type="button" data-dot="3" class="pager-dot" aria-label="Go to slide 4" aria-current="false"></button><button type="button" data-dot="4" class="pager-dot" aria-label="Go to slide 5" aria-current="false"></button></div><div class="swipe-label">← SWIPE / CLICK TO EXPLORE →</div></div>
+    </section>
+<section id="comparison" class="module">
+<div class="module-head"><div><span class="module-num">MODULE 07</span><h2>Find Your Sunseeker</h2><p>Product comparison based on the supplied specification workbook.</p></div></div>
+<div class="compare-wrap"><table><thead><tr><th>Core Feature</th><th>X5 Gen2<span class="model-tag">AWD Terrain Confidence</span></th><th>X7 Gen2<span class="model-tag">AWD Terrain Flagship</span></th><th>X7 Plus Gen2<span class="model-tag">Large-Lawn Flagship</span></th></tr></thead><tbody><tr><th scope="row">Yard Coverage</th><td>0.5 Acre</td><td>0.75 Acre</td><td>1.5 Acres</td></tr><tr><th scope="row">Positioning</th><td>AWD Terrain Confidence</td><td>AWD Terrain Flagship</td><td>Large-Lawn AWD Flagship</td></tr><tr><th scope="row">Navigation</th><td>RTK + VSLAM 2.0</td><td>RTK + VSLAM 2.0</td><td>RTK + VSLAM 2.0</td></tr><tr><th scope="row">Vision</th><td>Binocular + iToF</td><td>Binocular + iToF</td><td>Binocular + iToF</td></tr><tr><th scope="row">Day &amp; Night Vision</th><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><th scope="row">Drive</th><td>ATC + Rear Steering</td><td>ATC + Rear Steering</td><td>ATC + Rear Steering</td></tr><tr><th scope="row">Suspension</th><td>Front Wheel</td><td>Front Wheel</td><td>Front Wheel</td></tr><tr><th scope="row">Max Slope</th><td>60% / 30°</td><td>70% / 35°</td><td>70% / 35°</td></tr><tr><th scope="row">Cutting Width</th><td>8.7 in</td><td>8.7 in</td><td>13.8 in</td></tr><tr><th scope="row">Height Adjustment</th><td>Manual</td><td>Electric</td><td>Electric</td></tr><tr><th scope="row">Multi-Zone</th><td>No limit</td><td>No limit</td><td>No limit</td></tr><tr><th scope="row">Connectivity</th><td>Wi-Fi / Bluetooth / Optional 4G</td><td>Wi-Fi / Bluetooth / Optional 4G</td><td>Wi-Fi / Bluetooth / Optional 4G</td></tr></tbody></table></div>
+</section>
+<footer class="foot"><p><b>Design review only.</b> Carousel arrows, selling-point tabs, dot pagination and mobile swipe operate in this preview. Actual Amazon Premium A+ authoring depends on modules enabled for your Seller Central account. Original reference images were extracted from the Word document; replace them with approved final image exports before publication.</p><p>Content from the supplied A+ brief and 2026 product-spec Excel.<br>Claims that require final confirmation: RTK-free operation, 10 TOPS, exact narrow-path clearance, specific awards and numerical ROI comparisons.</p></footer>
+</main><script>
+document.querySelectorAll('[data-carousel]').forEach(group=>{
+ let slides=[...group.querySelectorAll('.slide')],tabs=[...group.querySelectorAll('[data-slide-tab]')],dots=[...group.querySelectorAll('[data-dot]')],idx=0;
+ const show=(n)=>{
+  idx=(n+slides.length)%slides.length;
+  slides.forEach((s,i)=>{s.classList.toggle('active',i===idx);s.setAttribute('aria-hidden',String(i!==idx));});
+  tabs.forEach((b,i)=>{b.classList.toggle('current',i===idx);b.setAttribute('aria-pressed',String(i===idx));});
+  dots.forEach((b,i)=>{b.classList.toggle('current',i===idx);b.setAttribute('aria-current',String(i===idx));});
+  group.querySelector('.idx').textContent=String(idx+1).padStart(2,'0');
+  tabs[idx].scrollIntoView({behavior:'smooth',block:'nearest',inline:'nearest'});
+ };
+ group.querySelector('[data-prev]').addEventListener('click',()=>show(idx-1));
+ group.querySelector('[data-next]').addEventListener('click',()=>show(idx+1));
+ tabs.forEach((b,i)=>b.addEventListener('click',()=>show(i)));
+ dots.forEach((b,i)=>b.addEventListener('click',()=>show(i)));
+ let sx=0,sy=0;
+ const stage=group.querySelector('.stage');
+ stage.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});
+ stage.addEventListener('touchend',e=>{
+  const dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;
+  if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.2)show(idx+(dx<0?1:-1));
+ },{passive:true});
+ group.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();show(idx-1)}if(e.key==='ArrowRight'){e.preventDefault();show(idx+1)}})
+});
+const nav=[...document.querySelectorAll('.top-tab')];
+const updateNav=()=>{const sections=[...document.querySelectorAll('.top-tab')].map(x=>document.getElementById(x.dataset.section)); let active=sections[0]?.id;
+ for(const el of sections){if(el&&el.getBoundingClientRect().top<180)active=el.id}
+ nav.forEach(x=>x.classList.toggle('active',x.dataset.section===active));
+};
+window.addEventListener('scroll',updateNav,{passive:true});updateNav();
+</script><script>
+document.querySelectorAll("img[data-asset-file]").forEach(async img=>{
+ try{
+  const response=await fetch(img.dataset.assetFile);
+  if(!response.ok) throw new Error("Image HTTP "+response.status);
+  const content=(await response.text()).trim();
+  img.src="data:image/jpeg;base64,"+content;
+ }catch(e){
+  console.warn("Image loading failed:",img.dataset.assetFile,e);
+  img.alt=(img.alt||"Image")+" — unable to load";
+ }
+});
+</script></body></html>
