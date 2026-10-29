@@ -17,9 +17,58 @@
 .cta{background:linear-gradient(112deg,#173b26,#345b38);color:white;padding:70px 0}.cta-flex{display:flex;justify-content:space-between;align-items:center;gap:35px}.cta h2{font-size:clamp(38px,5vw,60px);letter-spacing:-.06em;margin:5px 0 10px;line-height:1.1}.cta p{color:#e0ecdf;margin:0}.footer{background:#0d1e14;color:#a8bca9;padding:24px 0;font-size:12px}.footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:15px}.footer a{color:#d1e6d3}.hidden{display:none!important}
 @media(max-width:880px){.hero-inner{grid-template-columns:1fr;padding-top:60px}.hero-visual{height:270px}.hero-model img{height:190px}.cards,.intro-grid{grid-template-columns:1fr 1fr}.detail-content{grid-template-columns:1fr}.detail-visual{min-height:270px}.detail-visual img{height:245px}.nav{gap:9px}.nav a:not(.nav-cta){display:none}}
 @media(max-width:610px){.wrap{padding-left:18px;padding-right:18px}.header-in{padding:0 18px;height:65px}.hero-inner{padding-top:49px;padding-bottom:51px}.hero h1{font-size:66px}.hero p{font-size:15px}.hero .lead{font-size:19px}.hero-visual{height:215px;gap:5px}.hero-model img{height:130px;border-radius:11px}.hero-model .caption{font-size:12px}.hero-model:nth-child(2){transform:translateY(-10px)}.hero-model:nth-child(3){transform:translateY(-17px)}.hero-model .pill{top:-12px;font-size:8px}.section{padding:61px 0}.section-head h2{font-size:34px}.cards,.intro-grid{grid-template-columns:1fr}.product-card .picture{height:235px}.card-content .desc,.card-content .tagline{min-height:auto}.detail-shell{padding:17px}.detail-copy{padding:14px 8px 22px}.detail-copy h3{font-size:33px}.detail-visual{min-height:200px}.detail-visual img{height:205px}.cta-flex{display:block}.cta-flex .button{margin-top:23px}.footer .wrap{display:block}.footer span{display:block;margin-top:10px}}
+
+/* Gen2 interactive premium A+ style showcase — 2026-10-29 */
+#features{background:#fff}
+.feature-visual-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:25px}
+.feature-visual-head .eyebrow{color:var(--orange)}
+.feature-visual-head h2{font-size:clamp(30px,4.2vw,54px);letter-spacing:-.055em;line-height:1.08;margin:7px 0}
+.feature-visual-head p{max-width:650px;color:var(--muted);margin:0}
+.showcase{border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 18px 45px #192d1e10;background:#f5f7f5}
+.show-tabs{display:flex;gap:7px;overflow:auto;padding:17px 18px 14px;background:white;scrollbar-width:thin}
+.show-tab{border:1px solid #e1e9e1;border-radius:50px;background:#f7f9f7;padding:10px 17px;color:#567162;font-size:13px;font-weight:800;white-space:nowrap}
+.show-tab[aria-selected="true"],.show-tab:hover{background:var(--orange);color:white;border-color:var(--orange)}
+.show-stage{position:relative}
+.show-slide{display:none;grid-template-columns:52% 48%;min-height:520px}
+.show-slide.on{display:grid;animation:genfade .28s ease}
+@keyframes genfade{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:none}}
+.show-media{position:relative;min-width:0;overflow:hidden;background:radial-gradient(circle at 40% 32%,#f7faf7,#dce7df 64%,#cad9cc)}
+.show-media img{width:100%;height:100%;min-height:520px;object-fit:cover}
+.show-media.contain img{object-fit:contain;padding:35px;mix-blend-mode:multiply}
+.show-media .image-marker{position:absolute;bottom:18px;left:20px;background:#143221dd;color:#fff;border:1px solid #ffffff45;padding:8px 13px;border-radius:30px;font-size:11px;font-weight:800;letter-spacing:.1em}
+.show-copy{padding:65px clamp(28px,5vw,75px);display:flex;flex-direction:column;justify-content:center;background:#fcfdfb}
+.show-kicker{font-size:12px;font-weight:900;letter-spacing:.17em;color:var(--orange);text-transform:uppercase;margin-bottom:22px}
+.show-copy h3{font-size:clamp(32px,3.9vw,51px);line-height:1.04;letter-spacing:-.065em;margin:0 0 18px}
+.show-copy p{font-size:18px;line-height:1.65;color:#52685d;margin:0 0 25px}
+.show-points{display:flex;flex-wrap:wrap;gap:8px}
+.show-points span{font-size:11px;font-weight:900;color:#24543a;border:1px solid #cdddcf;background:#eff5ef;border-radius:22px;padding:8px 13px}
+.show-slide.reverse .show-media{order:2}.show-slide.reverse .show-copy{order:1}
+.show-arrow{position:absolute;top:50%;transform:translateY(-50%);border:1px solid #c8d6cc;background:#fffffff0;color:#143221;width:45px;height:60px;border-radius:9px;cursor:pointer;z-index:3;font-size:30px;display:grid;place-items:center;box-shadow:0 4px 14px #0002}
+.show-arrow:hover{background:var(--orange);color:white}
+.show-prev{left:10px}.show-next{right:10px}
+.show-footer{padding:14px 19px;background:white;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#73877c;letter-spacing:.1em;font-weight:700}
+.show-dots{display:flex;gap:7px}
+.show-dot{width:9px;height:9px;border:0;border-radius:50%;background:#cfdad1;padding:0;cursor:pointer}
+.show-dot[aria-current="true"]{background:var(--orange);width:28px;border-radius:20px}
+.shop-route{background:#153323;color:white;padding:58px 0 60px}
+.shop-route h2{font-size:clamp(33px,4.5vw,56px);letter-spacing:-.06em;margin:4px 0 12px}
+.shop-route p{color:#cfdfd1;margin:0 0 20px}
+.route-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.route-option{display:flex;flex-direction:column;align-items:flex-start;text-align:left;border:1px solid #ffffff45;border-radius:13px;padding:24px;min-height:156px;background:#ffffff10;color:#fff;cursor:pointer;transition:.18s}
+.route-option:hover,.route-option[aria-pressed="true"]{border-color:#ffab79;background:#f35b2540}
+.route-option strong{font-size:26px;line-height:1.1;letter-spacing:-.04em}
+.route-option span{margin-top:13px;font-size:13px;color:#e3e8e0}
+.route-result{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#ffffff14;border-radius:13px;padding:22px 24px;margin-top:16px}
+.route-result h3{font-size:23px;letter-spacing:-.04em;margin:4px 0}.route-result p{margin:0;font-size:14px}
+.route-result .button{flex-shrink:0}
+.route-muted{font-size:12px;color:#c7d9c8;margin-top:16px}
+.badge-source{font-size:11px;letter-spacing:.12em;color:#778c7c;text-transform:uppercase}
+@media(max-width:880px){.show-slide{grid-template-columns:1fr}.show-slide.reverse .show-media{order:0}.show-slide.reverse .show-copy{order:1}.show-media img{min-height:320px;max-height:400px}.show-copy{padding:36px 40px 45px}.show-arrow{top:205px}.route-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:610px){.feature-visual-head{display:block}.show-tabs{padding:12px;gap:5px}.show-tab{font-size:11px;padding:9px 12px}.show-media img{min-height:250px;max-height:290px}.show-copy{padding:29px 30px 34px}.show-copy h3{font-size:33px}.show-copy p{font-size:15px}.show-arrow{top:145px;width:33px;height:45px;font-size:23px}.show-prev{left:5px}.show-next{right:5px}.route-grid{grid-template-columns:1fr}.route-option{min-height:90px;padding:16px}.route-option strong{font-size:24px}.route-option span{margin-top:6px}.route-result{display:block}.route-result .button{display:inline-block;margin-top:16px}}
+@media(prefers-reduced-motion:reduce){.show-slide.on{animation:none}}
 </style></head>
 <body>
-<header class="header"><div class="header-in"><a href="#top" class="brand" aria-label="Sunseeker Elite Home">SUNSEEKER<small>ELITE · GEN2</small></a><nav class="nav" aria-label="Site sections"><a href="#lineup">Lineup</a><a href="#explore">Discover</a><a href="#compare">Compare</a><a class="nav-cta" href="#find">Find Your Fit ↗</a></nav></div></header>
+<header class="header"><div class="header-in"><a href="#top" class="brand" aria-label="Sunseeker Elite Home">SUNSEEKER<small>ELITE · GEN2</small></a><nav class="nav" aria-label="Site sections"><a href="#lineup">Lineup</a><a href="#explore">Discover</a><a href="#features">Features</a><a href="#compare">Compare</a><a class="nav-cta" href="#find">Find Your Fit ↗</a></nav></div></header>
 <main id="top">
 <section class="hero"><div class="wrap"><div class="hero-inner"><div>
 <div class="eyebrow">2026 GEN2 COLLECTION · NEW ARRIVALS</div><h1>New <em>Arrival.</em></h1><div class="lead">Three lawns. Three ways to mow smarter.</div>
@@ -27,13 +76,13 @@
 <div class="hero-cta"><a href="#lineup" class="button primary">Explore the Collection <span aria-hidden="true">↗</span></a><a href="#compare" class="button outline">Compare Models</a></div>
 <div class="hero-stats"><span>Wire-free mapping</span><span>AWD terrain traction</span><span>Vision AI 2.0</span></div>
 </div><div class="hero-visual" aria-label="Three Sunseeker Gen2 robot mower products">
-<div class="hero-model"><span class="pill">NEW</span><img loading="eager" alt="Sunseeker X5 Gen2" src="https://cdn-shopkit.com/usercontent/agromarante/media/images/14672d2-142902-x5gen2-1-1024x1024.jpg"><div class="caption">X5 Gen2</div></div>
+<div class="hero-model"><span class="pill">NEW</span><img loading="eager" alt="Sunseeker X5 Gen2" src="../x5-gen2/assets/img00.jpg"><div class="caption">X5 Gen2</div></div>
 <div class="hero-model"><span class="pill">NEW</span><img loading="eager" alt="Sunseeker X7 Gen2" src="https://www.scule.ro/images/com_eoshop3/additional_images/100424/100424-robot-de-tuns-gazon-sunseeker-x7-gen2-3000mp-tehnologie-gps-fara-fir-conexiune-bluetooth-gsm.jpg"><div class="caption">X7 Gen2</div></div>
 <div class="hero-model"><span class="pill">NEW</span><img loading="eager" alt="Sunseeker X7 Plus Gen2" src="https://cdn02.plentymarkets.com/1j5nujw563uz/item/images/114150/full/Sunseeker-X7Plus-Gen2-1.png"><div class="caption">X7 Plus Gen2</div></div>
 </div></div></div></section>
 <section class="section alt" id="lineup"><div class="wrap"><div class="section-head center"><div class="eyebrow dark">EXPLORE THE LINEUP</div><h2>Find the right Gen2 for your yard.</h2><p>Each model pairs smart navigation with AWD traction. The right choice comes down to lawn size, slope, cutting goals, and ownership needs.</p></div>
 <div class="cards">
-<article class="product-card"><div class="picture"><img loading="lazy" alt="X5 Gen2 three-quarter product view" src="https://cdn-shopkit.com/usercontent/agromarante/media/images/14672d2-142902-x5gen2-1-1024x1024.jpg"><span class="area-pill">Up to 0.5 Acre</span></div><div class="card-content"><div class="number">01 · THE 0.5-ACRE SWEET SPOT</div><h3>X5 Gen2</h3><div class="tagline">Right-Sized AWD Power.<br>Cleaner Edges.</div><p class="desc">Built for larger everyday backyards. AWD confidence meets a dedicated side trimming disc for a closer edge finish.</p><div class="chips"><span class="chip">60% Slopes · 30°</span><span class="chip">1.2 in Edge Trim</span><span class="chip">8.7 in Main Disc</span><span class="chip">Wheel Brushes</span></div><button class="button primary choose" data-model="x5">Explore X5 Gen2 ↗</button></div></article>
+<article class="product-card"><div class="picture"><img loading="lazy" alt="X5 Gen2 three-quarter product view" src="../x5-gen2/assets/img00.jpg"><span class="area-pill">Up to 0.5 Acre</span></div><div class="card-content"><div class="number">01 · THE 0.5-ACRE SWEET SPOT</div><h3>X5 Gen2</h3><div class="tagline">Right-Sized AWD Power.<br>Cleaner Edges.</div><p class="desc">Built for larger everyday backyards. AWD confidence meets a dedicated side trimming disc for a closer edge finish.</p><div class="chips"><span class="chip">60% Slopes · 30°</span><span class="chip">1.2 in Edge Trim</span><span class="chip">8.7 in Main Disc</span><span class="chip">Wheel Brushes</span></div><button class="button primary choose" data-model="x5">Explore X5 Gen2 ↗</button></div></article>
 <article class="product-card"><div class="picture"><img loading="lazy" alt="X7 Gen2 three-quarter product view" src="https://www.scule.ro/images/com_eoshop3/additional_images/100424/100424-robot-de-tuns-gazon-sunseeker-x7-gen2-3000mp-tehnologie-gps-fara-fir-conexiune-bluetooth-gsm.jpg"><span class="area-pill">Up to 0.75 Acre</span></div><div class="card-content"><div class="number">02 · THE TOUGH-TERRAIN CHOICE</div><h3>X7 Gen2</h3><div class="tagline">Large Lawn. Tough Terrain.<br>Made Simple.</div><p class="desc">For larger lawns with slopes, trees and uneven areas. Wide floating dual discs make longer mowing paths more efficient.</p><div class="chips"><span class="chip">70% Slopes · 35°</span><span class="chip">14 in Dual Discs</span><span class="chip">App Height Control</span><span class="chip">Rear Steering</span></div><button class="button primary choose" data-model="x7">Explore X7 Gen2 ↗</button></div></article>
 <article class="product-card"><div class="picture"><img loading="lazy" alt="X7 Plus Gen2 product view" src="https://cdn02.plentymarkets.com/1j5nujw563uz/item/images/114150/full/Sunseeker-X7Plus-Gen2-1.png"><span class="area-pill">Up to 1.5 Acres</span></div><div class="card-content"><div class="number">03 · THE LARGE-LAWN FLAGSHIP</div><h3>X7 Plus Gen2</h3><div class="tagline">Large, Complex Lawns.<br>Plus Freedom.</div><p class="desc">Scale up to expansive properties with the X7 cutting platform and standard 4G-GPS anti-theft hardware.</p><div class="chips"><span class="chip">1.5 Acres</span><span class="chip">70% Slopes · 35°</span><span class="chip">14 in Dual Discs</span><span class="chip">4G-GPS Included</span></div><button class="button primary choose" data-model="plus">Explore X7 Plus Gen2 ↗</button></div></article>
 </div></div></section>
@@ -50,9 +99,59 @@
 </div><div class="detail-content" id="spotlight-panel" role="tabpanel" aria-labelledby="tab-x5">
 <div class="detail-copy"><div class="overline" id="spotline">X5 GEN2 · 0.5-ACRE SWEET SPOT</div><h3 id="spottitle">Cut closer. Mow smarter.</h3><p id="spotdesc">Built for everyday mid-size lawns with AWD traction and cleaner edge finishing.</p><ul id="spotbullets"><li>Dedicated side micro-blade trims as close as 1.2 in</li><li>8.7 in floating main disc with six blades</li><li>AWD with 60% / 30° maximum slope rating</li><li>Virtual boundaries and app zone control</li></ul>
 <a class="button primary" id="spotlink" href="https://sunseekerelite.com/us/x-gen-2" target="_blank" rel="noopener">See Official Gen2 Collection ↗</a></div>
-<div class="detail-visual"><img id="spotimage" loading="lazy" alt="X5 Gen2 product photo" src="https://cdn-shopkit.com/usercontent/agromarante/media/images/14672d2-142902-x5gen2-1-1024x1024.jpg"></div>
+<div class="detail-visual"><img id="spotimage" loading="lazy" alt="X5 Gen2 product photo" src="../x5-gen2/assets/img00.jpg"></div>
 </div><div class="detail-bottom"><span>MODEL SPOTLIGHT · SELECT ANOTHER MODEL ABOVE</span><span id="spotcount">01 / 03</span></div></div>
 <p class="note">Product photos are design-preview references. For final Brand Store publication, replace with approved Sunseeker image assets and verify product links.</p>
+</div></section>
+
+<section class="section" id="features" aria-label="Interactive Gen2 features">
+<div class="wrap">
+<div class="feature-visual-head"><div><div class="eyebrow dark">INTERACTIVE FEATURE GALLERY · 01–05</div><h2>Built for real yards.<br>Designed around you.</h2><p>Explore the five reasons to choose the Gen2 family. Each visual pairs with its own specific benefit, from cleaner borders to wide-area cutting.</p></div><div class="badge-source">A+ INSPIRED · VISUAL PREVIEW</div></div>
+<div class="showcase" id="gen-showcase">
+<div class="show-tabs" role="tablist" aria-label="Gen2 feature slides">
+<button type="button" class="show-tab" role="tab" aria-selected="true" data-index="0">AWD Terrain</button>
+<button type="button" class="show-tab" role="tab" aria-selected="false" data-index="1">Wire-Free Navigation</button>
+<button type="button" class="show-tab" role="tab" aria-selected="false" data-index="2">Precision Edging</button>
+<button type="button" class="show-tab" role="tab" aria-selected="false" data-index="3">Wide Dual Discs</button>
+<button type="button" class="show-tab" role="tab" aria-selected="false" data-index="4">App Zone Control</button>
+</div>
+<div class="show-stage" role="region" aria-label="Feature slideshow" aria-live="polite">
+<article class="show-slide on" data-slide="0">
+<div class="show-media"><img src="../x5-gen2/assets/img00.jpg" loading="lazy" alt="Sunseeker Gen2 X5 shown working on an uneven sloping lawn"><span class="image-marker">X5 · 60% SLOPE / X7 SERIES · 70%</span></div>
+<div class="show-copy"><div class="show-kicker">ALL-TERRAIN DRIVE</div><h3>Confidence on<br>real terrain.</h3><p>AWD traction and active rear steering help Gen2 mowers handle sloped, uneven lawns.</p><div class="show-points"><span>X5 · 30° / 60%</span><span>X7 / Plus · 35° / 70%</span></div></div>
+</article>
+<article class="show-slide reverse" data-slide="1">
+<div class="show-media"><img src="../x5-gen2/assets/img02.jpg" loading="lazy" alt="Gen2 smart navigation and efficient mowing path visual"><span class="image-marker">AONavi · nRTK + VSLAM 2.0</span></div>
+<div class="show-copy"><div class="show-kicker">NO PERIMETER WIRE</div><h3>Map more.<br>Manage less.</h3><p>Smart navigation plans mowing paths and supports wire-free virtual boundaries.</p><div class="show-points"><span>Virtual Boundaries</span><span>Smart Route Planning</span></div></div>
+</article>
+<article class="show-slide" data-slide="2">
+<div class="show-media contain"><img src="../x5-gen2/assets/edge-disc-hi.webp" loading="lazy" alt="X5 Gen2 side mounted precision edge mini cutting disc"><span class="image-marker">X5 GEN2 · EXCLUSIVE EDGE DISC</span></div>
+<div class="show-copy"><div class="show-kicker">PRECISE EDGE FINISHING</div><h3>Cleaner edges.<br>Less touch-up.</h3><p>X5 Gen2's dedicated side mini disc helps cut closer to borders and reduce uncut strips.</p><div class="show-points"><span>Dedicated Side Disc</span><span>As Close as 1.2 in</span></div></div>
+</article>
+<article class="show-slide reverse" data-slide="3">
+<div class="show-media contain"><img src="https://www.scule.ro/images/com_eoshop3/additional_images/100424/100424-robot-de-tuns-gazon-sunseeker-x7-gen2-3000mp-tehnologie-gps-fara-fir-conexiune-bluetooth-gsm.jpg" loading="lazy" alt="Sunseeker X7 Gen2 robotic mower with wide dual disc cutting system"><span class="image-marker">X7 & X7 PLUS · DUAL DISC</span></div>
+<div class="show-copy"><div class="show-kicker">HIGH-CAPACITY CUTTING</div><h3>Wider cuts.<br>More yard.</h3><p>14-in floating dual discs give X7 models a wider mowing path for larger lawns.</p><div class="show-points"><span>14-in Dual Discs</span><span>Electronic Height Control</span></div></div>
+</article>
+<article class="show-slide" data-slide="4">
+<div class="show-media"><img src="../x5-gen2/assets/img14.jpg" loading="lazy" alt="Smart app lawn zoning and mowing schedule feature illustration"><span class="image-marker">GEN2 · SMART APP CONTROL</span></div>
+<div class="show-copy"><div class="show-kicker">YOUR LAWN, YOUR ROUTINE</div><h3>Make every<br>zone count.</h3><p>Set mowing zones, virtual boundaries and schedules from the Sunseeker app.</p><div class="show-points"><span>Multi-Zone Control</span><span>Custom Schedules</span></div></div>
+</article>
+<button type="button" class="show-arrow show-prev" aria-label="Previous feature">‹</button>
+<button type="button" class="show-arrow show-next" aria-label="Next feature">›</button>
+</div>
+<div class="show-footer"><span id="show-count">01 / 05</span><div class="show-dots" aria-label="Select feature slide"><button type="button" class="show-dot" data-index="0" aria-current="true" aria-label="Feature 1"></button><button type="button" class="show-dot" data-index="1" aria-current="false" aria-label="Feature 2"></button><button type="button" class="show-dot" data-index="2" aria-current="false" aria-label="Feature 3"></button><button type="button" class="show-dot" data-index="3" aria-current="false" aria-label="Feature 4"></button><button type="button" class="show-dot" data-index="4" aria-current="false" aria-label="Feature 5"></button></div><span>SWIPE OR USE ARROWS</span></div>
+</div>
+<div class="note">Illustrative A+ layout. Product images are reference assets, not approved final Amazon Store creative. Confirm US launch SKUs and visual rights before publication.</div>
+</div></section>
+<section class="shop-route" id="choose">
+<div class="wrap"><div class="eyebrow">QUICK BUYER GUIDE</div><h2>Which Gen2 fits your lawn?</h2><p>Select your rated lawn area to see the closest match in the new collection.</p>
+<div class="route-grid" role="group" aria-label="Select lawn size">
+<button type="button" class="route-option" data-fit="x5" aria-pressed="true"><strong>Up to 0.5 Acre</strong><span>Complex everyday yards · precise edges</span></button>
+<button type="button" class="route-option" data-fit="x7" aria-pressed="false"><strong>Up to 0.75 Acre</strong><span>Larger lawns · wide cut · tougher slopes</span></button>
+<button type="button" class="route-option" data-fit="plus" aria-pressed="false"><strong>Up to 1.5 Acres</strong><span>Big properties · extended lawn coverage</span></button>
+</div>
+<div class="route-result" id="fit-result" aria-live="polite"><div><div class="eyebrow">RECOMMENDED MODEL</div><h3 id="fit-title">X5 Gen2</h3><p id="fit-copy">AWD Terrain Confidence · Cleaner edges with a dedicated side disc.</p></div><a id="fit-link" class="button primary" href="#explore">Explore This Model ↗</a></div>
+<div class="route-muted">Rated coverage reflects supported lawn size, not the area mowed on one battery charge. Terrain, layout and mowing conditions may affect performance.</div>
 </div></section>
 <section class="section" id="compare"><div class="wrap"><div class="section-head center"><div class="eyebrow dark">SIDE-BY-SIDE</div><h2>Gen2 model comparison.</h2><p>The same smart foundation, with meaningful differences in area coverage, slope handling and cutting equipment.</p></div>
 <div class="compare-wrap"><table><thead><tr><th scope="col">Specification</th><th scope="col">X5 Gen2</th><th scope="col">X7 Gen2</th><th scope="col">X7 Plus Gen2</th></tr></thead><tbody>
@@ -66,12 +165,12 @@
 <tr><td>Signature advantage</td><td>Dedicated side edge disc<span class="sub">As close as 1.2 in to edges</span></td><td>Higher slope rating + wide cut</td><td>1.5-acre scale + included 4G-GPS module</td></tr>
 <tr><td>4G-GPS anti-theft</td><td>Optional</td><td>Optional</td><td>Standard hardware<span class="sub">Service / connectivity terms may apply</span></td></tr>
 </tbody></table></div><div class="note">Rated lawn coverage is not coverage per charge. Actual performance varies with layout, conditions, mowing schedule and setup. Maximum slope performance depends on ground conditions; follow the boundary setup guidance. Anti-theft tracking does not prevent theft or guarantee recovery.</div></div></section>
-<section class="cta" id="find"><div class="wrap"><div class="cta-flex"><div><div class="eyebrow">THE RIGHT MACHINE FOR YOUR LAWN</div><h2>Find your best fit.</h2><p>Cleaner borders. Greater slope confidence. More acreage. Pick what matters most.</p></div><div class="hero-cta"><a href="#lineup" class="button primary">Compare the Lineup ↗</a><a href="https://sunseekerelite.com/us/x-gen-2" target="_blank" rel="noopener" class="button light">Visit Sunseeker Elite ↗</a></div></div></div></section>
+<section class="cta" id="find"><div class="wrap"><div class="cta-flex"><div><div class="eyebrow">THE RIGHT MACHINE FOR YOUR LAWN</div><h2>Find your best fit.</h2><p>Cleaner borders. Greater slope confidence. More acreage. Pick what matters most.</p></div><div class="hero-cta"><a href="#lineup" class="button primary">View Models ↗</a><a href="https://sunseekerelite.com/us/x-gen-2" target="_blank" rel="noopener" class="button light">Visit Sunseeker Elite ↗</a></div></div></div></section>
 </main><footer class="footer"><div class="wrap"><span>© Sunseeker Elite · New Arrival · Design Preview</span><span>Interactive product collection preview · Not an Amazon-hosted page</span></div></footer>
 <script>
 (function(){
 const models={
-x5:{overline:"X5 GEN2 · THE 0.5-ACRE SWEET SPOT",title:"Cut closer. Mow smarter.",desc:"The right-sized AWD choice for larger everyday lawns, with a dedicated side disc to help finish edges more cleanly.",bullets:["Up to 0.5-acre rated lawn coverage","Side trimming as close as 1.2 in to borders","8.7-in floating main disc · six blades","60% / 30° slope rating · wheel brushes"],url:"https://sunseekerelite.com/us/x-gen-2",img:"https://cdn-shopkit.com/usercontent/agromarante/media/images/14672d2-142902-x5gen2-1-1024x1024.jpg",num:"01 / 03",alt:"Sunseeker X5 Gen2 mower"},
+x5:{overline:"X5 GEN2 · THE 0.5-ACRE SWEET SPOT",title:"Cut closer. Mow smarter.",desc:"The right-sized AWD choice for larger everyday lawns, with a dedicated side disc to help finish edges more cleanly.",bullets:["Up to 0.5-acre rated lawn coverage","Side trimming as close as 1.2 in to borders","8.7-in floating main disc · six blades","60% / 30° slope rating · wheel brushes"],url:"https://sunseekerelite.com/us/x-gen-2",img:"../x5-gen2/assets/img00.jpg",num:"01 / 03",alt:"Sunseeker X5 Gen2 mower"},
 x7:{overline:"X7 GEN2 · TOUGH-TERRAIN CONFIDENCE",title:"Large lawn. Tough terrain.",desc:"For larger yards with hills, shade and uneven ground, X7 Gen2 pairs AWD and active steering with wide-cut dual discs.",bullets:["Up to 0.75-acre rated lawn coverage","70% / 35° maximum slope rating","14-in floating dual discs","App-adjustable 0.8–4.0-in cutting height"],url:"https://sunseekerelite.com/us/x-gen-2",img:"https://www.scule.ro/images/com_eoshop3/additional_images/100424/100424-robot-de-tuns-gazon-sunseeker-x7-gen2-3000mp-tehnologie-gps-fara-fir-conexiune-bluetooth-gsm.jpg",num:"02 / 03",alt:"Sunseeker X7 Gen2 mower"},
 plus:{overline:"X7 PLUS GEN2 · LARGE-LAWN FREEDOM",title:"Big lawns. More freedom.",desc:"Expand to 1.5 acres while retaining X7's dual-disc cutting system and 70% slope rating, with 4G-GPS anti-theft hardware included.",bullets:["Up to 1.5-acre rated lawn coverage","70% / 35° maximum slope rating","14-in floating dual discs","Standard 4G-GPS anti-theft module"],url:"https://sunseekerelite.com/us/x-gen-2",img:"https://cdn02.plentymarkets.com/1j5nujw563uz/item/images/114150/full/Sunseeker-X7Plus-Gen2-1.png",num:"03 / 03",alt:"Sunseeker X7 Plus Gen2 mower"}
 };
@@ -79,5 +178,18 @@ function select(key){const m=models[key];if(!m)return;document.querySelectorAll(
 document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>select(t.dataset.model)));
 document.querySelectorAll('.choose').forEach(b=>b.addEventListener('click',()=>{select(b.dataset.model);document.getElementById('explore').scrollIntoView({behavior:'smooth'})}));
 document.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{img.style.visibility='hidden';img.parentElement.setAttribute('data-image-unavailable','true');img.parentElement.setAttribute('aria-label',(img.alt||'Product photo')+' — image currently unavailable')}));
+})();
+
+;(()=>{const gallery=document.getElementById('gen-showcase');if(!gallery)return;
+const slides=[...gallery.querySelectorAll('.show-slide')],tabs=[...gallery.querySelectorAll('.show-tab')],dots=[...gallery.querySelectorAll('.show-dot')];
+let index=0;
+function show(next){index=(next+slides.length)%slides.length;slides.forEach((el,i)=>el.classList.toggle('on',i===index));tabs.forEach((el,i)=>{el.setAttribute('aria-selected',String(i===index));el.tabIndex=i===index?0:-1});dots.forEach((el,i)=>el.setAttribute('aria-current',String(i===index)));document.getElementById('show-count').textContent=String(index+1).padStart(2,'0')+' / 05';if(window.matchMedia('(max-width:610px)').matches)tabs[index].scrollIntoView({behavior:'smooth',inline:'nearest',block:'nearest'})}
+tabs.forEach((b,i)=>b.addEventListener('click',()=>show(i)));dots.forEach((b,i)=>b.addEventListener('click',()=>show(i)));
+gallery.querySelector('.show-prev').addEventListener('click',()=>show(index-1));gallery.querySelector('.show-next').addEventListener('click',()=>show(index+1));
+gallery.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();show(index-1)}else if(e.key==='ArrowRight'){e.preventDefault();show(index+1)}});
+let tx=0,ty=0;const stage=gallery.querySelector('.show-stage');stage.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});stage.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.25)show(index+(dx<0?1:-1))},{passive:true});
+const fit={x5:['X5 Gen2','AWD Terrain Confidence · Cleaner edges with a dedicated side disc.'],x7:['X7 Gen2','For 0.75-acre yards: 14-in dual discs, AWD and 70% slope capability.'],plus:['X7 Plus Gen2','For lawns up to 1.5 acres: wide dual cutting with a larger-area rating.']};
+document.querySelectorAll('.route-option').forEach(b=>b.addEventListener('click',()=>{const v=b.dataset.fit;document.querySelectorAll('.route-option').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.getElementById('fit-title').textContent=fit[v][0];document.getElementById('fit-copy').textContent=fit[v][1];document.getElementById('fit-link').onclick=()=>{const tab=document.getElementById('tab-'+v);if(tab)tab.click()}}));
+gallery.querySelectorAll('img').forEach(im=>im.addEventListener('error',()=>{im.alt+=' (reference image unavailable)';im.style.objectFit='contain';im.style.background='#e6efea'}));
 })();
 </script></body></html>
